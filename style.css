@@ -1,5 +1,10 @@
+.font-regular{
+  font-family: "Tektur", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
 body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background-color: grey;
+  background-color: whitesmoke;
 }

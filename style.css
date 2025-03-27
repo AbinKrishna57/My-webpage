@@ -8,3 +8,52 @@
 body{
   background-color: whitesmoke;
 }
+
+.title{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  background-color: blue;
+  border-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.container{
+  display: flex;
+  flex-direction: row; /* Explicitly define row layout */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Adds spacing between divs */
+  flex-wrap: wrap; /* Allows wrapping if screen is small */
+}
+
+#table1, #table2, #table3{
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 30px;
+  height: 17cm;
+  width: 10cm;
+}
+
+#td{
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+/* #table2{
+  margin-left: 5cm;
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 30px;
+  height: 17cm;
+  width: 10cm;
+}
+
+#table3{
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 30px;
+  height: 17cm;
+  width: 10cm;
+} */

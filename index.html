@@ -3,7 +3,8 @@
   <head>
     <!-- This is the name of the page -->
     <title>To-Do TaskManager</title>
-
+    <!-- This puts icon for the webpage -->
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <!-- This line specifies the character set of the page -->
     <meta charset="UTF-8">
     <!-- This line makes the webpage look good in every device -->
@@ -15,23 +16,23 @@
 
     <!-- This connects the css file to index -->
     <link rel="stylesheet" href="style.css">
-
   </head>
 
   <body>
-    <div class="title">
-      To-Do TaskManager
-    </div>
+    <div class="title">To-Do TaskManager</div>
 
     <div class="container">
-      <div id="table1">
-        <div id="td">To-Do</div>
+      <div class="order" id="table1">
+        <div class="spacing">To-Do</div>
+        <div>
+          <img src="assets/add.png" height="30px" class="click-func-add" id="add-func">
+        </div>
       </div>
-      <div id="table2">
-        Doing
+      <div class="order" id="table2">
+        <div class="spacing">Doing</div>
       </div>
-      <div id="table3">
-        Done
+      <div class="order" id="table3">
+        <div class="spacing">Done</div>
       </div>
     </div>
   </body>

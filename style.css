@@ -1,12 +1,13 @@
 .font-regular{
   font-family: "Tektur", sans-serif;
+  color: #1f2a34;
   font-weight: 500;
   font-style: normal;
   font-size: 30px;
 }
 
 body{
-  background-color: whitesmoke;
+  background-color:	#293f53;
 }
 
 .title{
@@ -14,8 +15,8 @@ body{
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 7px;
-  background-color: blue;
-  border-radius: 30px;
+  background-color: #4682B4;
+  border-radius: 10px;
   width: fit-content;
   height: fit-content;
 }
@@ -28,18 +29,36 @@ body{
   flex-wrap: wrap; /* Allows wrapping if screen is small */
 }
 
-#table1, #table2, #table3{
-  margin-top: 10px;
-  background-color: red;
-  border-radius: 30px;
+.order{
+  margin-top: 15px;
+  background-color: #4682B4;
+  border-radius: 20px;
   height: 17cm;
   width: 10cm;
 }
 
-#td{
+/* #table1{
+  background-color: #4682B4;
+} */
+
+
+.spacing{
   padding-top: 5px;
   padding-left: 20px;
 }
+
+#add-func{
+  padding-left: 20px;
+  padding-top: 20px;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#add-func:hover{
+  transform: scale(1.3);
+}
+
 
 /* #table2{
   margin-left: 5cm;

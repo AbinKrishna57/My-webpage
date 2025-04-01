@@ -1,3 +1,7 @@
+html{
+  scrollbar-width: none;
+}
+
 .font-regular{
   font-family: "Tektur", sans-serif;
   color: #1f2a34;
@@ -6,16 +10,15 @@
   font-size: 30px;
 }
 
-body{
-  background-color:	#293f53;
-}
+/* body{
+  background-image: url("assets/media/ocean.jpg");
+} */
 
 .title{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 7px;
-  background-color: #4682B4;
+  color: black;
+  padding: 10px 15px 7px 15px; /* top left bottom right */
+  background-color: transparent;
+  /* backdrop-filter: blur(10px); */
   border-radius: 10px;
   width: fit-content;
   height: fit-content;
@@ -31,8 +34,9 @@ body{
 
 .order{
   margin-top: 15px;
-  background-color: #4682B4;
+  /* background-color: #4682B4; */
   border-radius: 20px;
+  backdrop-filter: blur(50px);
   height: 17cm;
   width: 10cm;
 }
@@ -42,23 +46,39 @@ body{
 } */
 
 
-.spacing{
-  padding-top: 5px;
-  padding-left: 20px;
+#spacing{
+  margin-left: 20px;
+}
+
+#add-btn{
+  background-color: transparent;
+  border: none;
 }
 
 #add-func{
-  padding-left: 20px;
-  padding-top: 20px;
+  background-color: transparent;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 170px;
+  /* padding-top: 5px; */
   transform-origin: center;
-  transition: all 0.3s ease;
-  position: relative;
+  transition: all 0.2s ease;
+  /* position: relative; */
 }
 
 #add-func:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
+
+#tasks{
+  background-color: red;
+  margin-top: 30px;
+  margin-left: 19px;
+  border-radius: 30px;
+  height: 14.3cm;
+  width: 9cm;
+}
 
 /* #table2{
   margin-left: 5cm;

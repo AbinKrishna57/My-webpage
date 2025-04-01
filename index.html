@@ -16,23 +16,43 @@
 
     <!-- This connects the css file to index -->
     <link rel="stylesheet" href="assets/media/style.css">
+
+    <!-- JS File added -->
+    <script src="assets/js/file.js"></script>
+
+    <style>
+      #bg{
+        background-image: url("assets/media/img.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        /* background-size: contain; */
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    
   </head>
 
-  <body>
+  <body id="bg">
     <div class="title">To-Do TaskManager</div>
 
     <div class="container">
       <div class="order" id="table1">
-        <div class="spacing">To-Do</div>
-        <div>
-          <img src="assets/Images/add.png" height="30px" class="click-func-add" id="add-func">
+        <div id="spacing">📝 To-Do
+          <button id="add-btn" onclick="add_button()">
+            <img src="assets/Images/add.png" height="30px" id="add-func">
+          </button>
+        </div>
+        <div id="tasks">
+          .
         </div>
       </div>
       <div class="order" id="table2">
-        <div class="spacing">Doing</div>
+        <div id="spacing">⚡In Progress</div>
       </div>
       <div class="order" id="table3">
-        <div class="spacing">Done</div>
+        <div id="spacing">✅ Completed</div>
       </div>
     </div>
   </body>

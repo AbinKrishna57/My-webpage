@@ -1,5 +1,6 @@
 html{
   scrollbar-width: none;
+  cursor: default;
 }
 
 .font-regular{
@@ -18,7 +19,7 @@ html{
   color: black;
   padding: 10px 15px 7px 15px; /* top left bottom right */
   background-color: transparent;
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(7px);
   border-radius: 10px;
   width: fit-content;
   height: fit-content;

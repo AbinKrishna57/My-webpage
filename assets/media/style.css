@@ -45,18 +45,61 @@ html{
 /* #table1{
   background-color: #4682B4;
 } */
+.task-container{
+  /* display: none; Hidden by default */
+  position: fixed;
+  top: 15%;
+  left: 13%;
+  /* transform: translate(-50%, -50%); */
+  /* transition: all 1s ease-out; */
+  /* background-color: white; */
+  backdrop-filter: blur(50px);
+  padding: 0 15px 15px 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 1000;
+  /* animation: fadeIn 2s ease-out forwards; */
+}
 
+#save-btn{
+  /* margin-left: 4.8cm; */
+  height: 0.8cm;
+  width: 1.5cm;
+  border: none;
+  font-size: medium;
+  border-radius: 5px;
+  padding: 0;
+}
 
-#spacing{
+#delete-btn{
+  margin-left: 3.4cm;
+  height: 0.8cm;
+  width: 1.5cm;
+  border: none;
+  font-size: medium;
+  border-radius: 5px;
+  padding: 0;
+}
+
+#n{
+  font-size: 20px;
+}
+
+#i{
+  margin: 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  padding: 0;
+}
+
+.spacing{
   margin-left: 20px;
 }
 
 #add-btn{
-  background-color: transparent;
   border: none;
-}
-
-#add-func{
   background-color: transparent;
   display: inline-block;
   margin-top: 10px;
@@ -67,10 +110,9 @@ html{
   /* position: relative; */
 }
 
-#add-func:hover{
+#add-btn:hover{
   transform: scale(1.2);
 }
-
 
 #tasks{
   background-color: red;

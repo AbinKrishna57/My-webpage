@@ -1,0 +1,41 @@
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+}
+
+html{
+  scrollbar-width: none;
+  /* cursor: default; */
+}
+
+.font-regular{
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.title{
+  color: black;
+  /* top left bottom right */
+  padding: 10px 15px 7px 15px;
+  /* background-color: rebeccapurple; */
+  /* backdrop-filter: blur(7px); */
+  margin-top: 2px;
+  margin-left: 20px;
+  /* border-radius: 10px; */
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  justify-self: center;
+}
+
+.spacing{
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  margin-left: 20px;
+}

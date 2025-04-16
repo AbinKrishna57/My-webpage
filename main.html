@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- This is the name of the page -->
+    <title>To-Do TaskManager</title>
+    <!-- This puts icon for the webpage -->
+    <link rel="icon" href="assets/Images/icon.svg" type="image/x-icon">
+    <!-- This line specifies the character set of the page -->
+    <meta charset="UTF-8">
+    <!-- This line makes the webpage look good in every device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Knewave&display=swap" rel="stylesheet">
+    
+    <!-- CSS Animation Library https://animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- This connects the css file to index -->
+    <link rel="stylesheet" href="assets/media/home_style.css">
+    <link rel="stylesheet" href="assets/media/style2.css">
+  </head>
+
+  <body>
+    <div class="title font-regular">To-Do TaskManager</div>
+    <div class="container">
+      <div class="order" id="table1">
+        <div class="spacing">📝 To-Do
+          <button id="add-btn">
+            <img src="assets/Images/add_task.svg" height="30px">
+          </button>
+        </div>
+        <div id="tasks"></div>
+      </div>
+      <!-- <div class="order" id="table2">
+        <div class="spacing">⚡In Progress</div>
+      </div>
+      <div class="order" id="table3">
+        <div class="spacing">✅ Completed</div>
+      </div> -->
+    </div>
+    <!-- JS FILE ADDED -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

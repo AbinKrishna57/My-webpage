@@ -2,7 +2,7 @@
   padding-top: 0px;
   margin: 0px;
   /* color: #022835; */
-  user-select: none;
+  /* user-select: none; */
 }
 
 html{
@@ -52,20 +52,103 @@ nav li a{
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 
-  margin-left: 30cm;
+  position: absolute;
+  left: 96%;
+  top: 3%;
 }
 
 nav li a:hover{
   text-decoration: underline;
 }
 
-#desc{
+#head{
   position: absolute;
-  top: 200px;
-  left: 50px;
+  bottom: 34%;
+  left: 3.3%;
+
   font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   font-size: 70px;
   color: #05181E;
+
+  width: fit-content;
+}
+
+#desc{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  top: 65%;
+  left: 3.3%;
+  font-size: 20px;
+  color: #05181E;
+}
+
+.td-i{
+  position: absolute;
+  top: 35%;
+  left: 69%;
+  height: 300px;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+
+.ani{
+  /* background-color: red; */
+  width: 0;
+  height: fit-content;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+.ani:hover #arrow{
+  transform: scale(1.05);
+}
+.ani:hover .td-i{
+  transform: scale(1.05);
+}
+.ani:hover #gs{
+  transform: scale(1.1);
+}
+
+#arrow{
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  height: 100px;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+/* 
+#arrow:hover{
+  transform: scale(1.2);
+} */
+
+#gs{
+  font-family: "Jolly Lodger", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  
+  position: absolute;
+  top: 32%;
+  left: 55%;
+
+  width: auto;
+  height: fit-content;
+  transform-origin: center;
+  transition: all 0.2s ease;
+}
+
+.ani a{
+  color: black;
+  text-decoration: none;
+}
+
+.ani a:active{
+  color: black;
 }

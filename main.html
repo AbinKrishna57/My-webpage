@@ -12,7 +12,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Funnel+Display:wght@300..800&family=Inter:ital,opsz@0,14..32;1,14..32&family=Jolly+Lodger&family=Knewave&display=swap" rel="stylesheet">
     
     <!-- CSS Animation Library https://animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -20,16 +20,27 @@
     <!-- This connects the css file to index -->
     <link rel="stylesheet" href="assets/media/home_style.css">
     <link rel="stylesheet" href="assets/media/style2.css">
+    <link rel="stylesheet" href="assets/media/index_styles.css">
   </head>
 
   <body>
-    <div class="title font-regular">To-Do TaskManager</div>
+    <header id="header">
+      <a href="index.html" id="heading-href">
+        <h1 id="heading">To-Do TaskManager</h1>
+      </a>
+    </header>
+    <!-- <div class="title font-regular">To-Do TaskManager</div> -->
     <div class="container">
-      <div class="order" id="table1">
-        <div class="spacing">📝 To-Do
-          <button id="add-btn">
-            <img src="assets/Images/add_task.svg" height="30px">
-          </button>
+      <div class="order animate__animated animate__faster">
+        <div class="spacing">
+          <img src="assets/Images/checklist.png" id="checklist-img">
+          <h4 id="td-h">To-Do</h4>
+          <div id="h">
+            <img src="assets/Images/add_task.svg" height="30px" id="add-btn-img">
+            <input type="text" id="inp" placeholder="Add Task" maxlength="95">
+          </div>
+          <!-- <button id="add-btn">
+          </button> -->
         </div>
         <div id="tasks"></div>
       </div>

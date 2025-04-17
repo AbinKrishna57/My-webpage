@@ -16,26 +16,33 @@ html{
   font-style: normal;
 }
 
-.title{
-  color: black;
-  /* top left bottom right */
+/* .title{
+  color: #07103A;
+  top left bottom right
   padding: 10px 15px 7px 15px;
-  /* background-color: rebeccapurple; */
-  /* backdrop-filter: blur(7px); */
+  background-color: rebeccapurple;
+  backdrop-filter: blur(7px);
   margin-top: 2px;
   margin-left: 20px;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   width: fit-content;
   height: fit-content;
   position: relative;
   justify-self: center;
-}
+} */
 
 .spacing{
   font-family: "Inter", sans-serif;
   font-size: 30px;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
   margin-left: 20px;
+  padding-top: 10px;
+}
+
+#td-h{
+  color: #07103A;
+  margin: 0;
+  display: inline-block;
 }

@@ -35,7 +35,7 @@ html{
 }
 
 nav{
-  background-color: transparent; /* keep nav inside header clean */
+  background-color: transparent;
 }
 
 nav ul{

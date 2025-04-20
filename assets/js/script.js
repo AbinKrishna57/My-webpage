@@ -106,7 +106,7 @@ save.addEventListener("click", ()=>{
     each_task.style.marginTop="10px";
     each_task.classList.add("animate__animated", "animate__fast", "animate__lightSpeedInRight");
     
-    each_task.innerHTML="<input type='checkbox' class='check-btn'>"+"'"+inp_val+"'";
+    each_task.innerHTML="<input type='checkbox' class='check-btn'><span>"+"'"+inp_val+"'"+"</span>";
     const img=document.createElement('img');
     img.src='assets/Images/delete.png';
     img.id="del-img";
@@ -124,6 +124,20 @@ save.addEventListener("click", ()=>{
     each_task.appendChild(task_del);
     inp.value="";
   };
+});
+
+const tasksContainer = document.getElementById("tasks");
+tasksContainer.addEventListener("change", (event) => {
+  if (event.target.type === "checkbox" && event.target.classList.contains("check-btn")) {
+    const checkbox = event.target;
+    const taskText = checkbox.nextElementSibling; // The <span> is the next sibling
+
+    if (checkbox.checked) {
+      taskText.classList.add("task-completed");
+    } else {
+      taskText.classList.remove("task-completed");
+    }
+  }
 });
 
 h_div.appendChild(save);

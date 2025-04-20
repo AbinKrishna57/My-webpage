@@ -157,6 +157,10 @@
   margin-right: 3%;
 }
 
+.task-completed {
+  text-decoration: line-through;
+}
+
 .del-btn{
   opacity: 0%;
   user-select: none;

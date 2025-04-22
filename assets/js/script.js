@@ -126,18 +126,18 @@ save.addEventListener("click", ()=>{
   };
 });
 
-const tasksContainer = document.getElementById("tasks");
-tasksContainer.addEventListener("change", (event) => {
-  if (event.target.type === "checkbox" && event.target.classList.contains("check-btn")) {
-    const checkbox = event.target;
-    const taskText = checkbox.nextElementSibling; // The <span> is the next sibling
+// const tasksContainer=document.getElementById("tasks");
+// tasksContainer.addEventListener("change", (event) => {
+//   if (event.target.type === "checkbox" && event.target.classList.contains("check-btn")) {
+//     const checkbox=event.target;
+//     const taskText=checkbox.nextElementSibling; // The <span> is the next sibling
 
-    if (checkbox.checked) {
-      taskText.classList.add("task-completed");
-    } else {
-      taskText.classList.remove("task-completed");
-    }
-  }
-});
+//     if (checkbox.checked) {
+//       taskText.classList.add("task-completed");
+//     } else {
+//       taskText.classList.remove("task-completed");
+//     }
+//   }
+// });
 
-h_div.appendChild(save);
+// h_div.appendChild(save);
